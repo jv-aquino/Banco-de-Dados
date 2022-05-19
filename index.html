@@ -15,23 +15,41 @@
   <section>
     <h2>Conceitos básicos</h2>
     <div>
-      <h3>Dados, informação e conhecimento</h3>
-      Dados são unidades que armazenam valores quaisquer (como uma variável) e podem ser acessados por meio de identificadores, tendo tamanhos variados de memória. Eles podem ser Ints, floats, strings, chars e booleanos, por exemplo.
-      <br>Já o conceito de Informação se refere ao conjunto de dados ou conhecimentos que se referem a um determinado assunto ou acontecimento.
-      <br>Na informática  a informação pode ser a reunião dos dados processados em um computador que são capazes de gerar resultados para um determinado projeto.
-      <br>Conhecimento é o fato ou a condição de saber obtida através de uma experiência, vivência, ou de uma associação.
+      <h3>Dados, Informação e Conhecimento</h3>
+      <span>Dados</span> são unidades que armazenam valores quaisquer (como uma variável) e podem ser acessados por meio de identificadores, tendo tamanhos variados de memória. Eles podem ser Ints, floats, strings, chars e booleanos, por exemplo.
+      <br>Já o conceito de <span>Informação</span> se refere ao conjunto de dados ou conhecimentos que se referem a um determinado assunto ou acontecimento.
+      <br>Na informática  a <span>informação</span> pode ser a reunião dos dados processados em um computador que são capazes de gerar resultados para um determinado projeto.
+      <br><span>Conhecimento</span> é o fato ou a condição de saber obtida através de uma experiência, vivência, ou de uma associação.
     </div>
-  </section>
-
-  <section>
-    <h2></h2>
     <div>
-      
+      <h3>Sistemas de bancos de dados</h3>
+      <span>Oracle DataBase</span>: Um sistema de banco de dados relacional, desenvolvido pela Oracle em 1977. Amplamente utilizado por poder ser executado em diversos Sistemas Operacionais.
+      Uma das ferramentas que ajudaram a popularizar este sistema é o particionamento. Esta permite o funcionamento sem interrupção, caso um dos serviços de um cluster (computadores ligados entre si que trabalham em conjunto, sendo considerados um único sistema) falhe.
+    <br><span>SQL Server</span>: Sistema de gerenciamento de banco de dados da Microsoft, funcionando de maneira relacional utilizando a linguagem SQL. Este sistema é uma das tecnologias de banco de dados líder no mercado, a qual possui mecanismos de processamento e armazenamento capazes de gerenciar arquivos de banco de dados, tabelas, páginas, transações, etc.
+    <br><span>MySQL</span>: O mySQL é um sistema de gerenciamento de banco de dados muito popular, por ter seu código fonte totalmente aberto aos usuários. Trabalha de modo onde os clientes (usuários)  executam o software, se conectam ao servidor e acessam seus dados.
+    <br><span>PostgreSQL</span>: Funciona de maneira parecida ao MySQL, pois também tem seu código aberto, porém é reconhecido por ser ainda mais avançado.
+    Sua principal característica é a sua necessidade de esforços, as quais são mínimas devido a sua estabilidade. Comparando o PostgreSQL a outros sistemas, ele possui o menor custo total.
+    <br><span>FireBird DB</span>: Funciona também de maneira relacional com código aberto, oferece tantos recursos quanto a linguagem SQL, oferecendo assim um alto desempenho e um grande suporte a idiomas. 
+    Alguns de seus recursos ainda são usados em bancos de dados comerciais, como: procedimentos armazenados, replicação e backups.
+  </div>
+  </section>
+
+  <section>
+    <h2>Modelagem de dados</h2>
+    <div>
+      <h3>Modelagem</h3>
+      A modelagem de dados é um processo que é usado para processar e manejar grandes quantidades de dados que são coletados, muitas vezes por empresas que atuam na área de TI.
+      <br><span>Modelo Entidade Relacionamento</span>: ferramenta de modelagem e representação de dados utilizada durante a fase de Modelos de dados conceituais
+      <br><span>Entidade</span>: representação de um conjunto de informações de algum conceito (como um user que possui Nome, Sobrenome e etc.) e ela possui atributos que são informações que se referenciam à própria imagem.
+      <br><span>Atributos</span>: são características dessa Entidade, que possuem informações sobre ela, como, por exemplo, o Nome, Sobrenome, Senha e Email de um user.
+      <br><span>Relacionamento</span>: quando algum atributo de uma Entidade está referenciado em outra imagem, estas duas entidades possuem um relacionamento (por exemplo um sistema onde o usuário recebe o valor por um móvel e esse móvel tem um valor, logo User -> Valor; Móvel -> Valor; - possuem um relacionamento)
+      <br><span>Cardinalidade</span>: Se refere a quantidade de relacionamentos de um elemento em outros elementos, e pode ser de 1:1 quando se tem um elemento pra uma outra entidade, 1:N quando se tem um elemento pra várias entidades, N:N quando se tem vários elementos para várias entidades
+      <br><br><span style="text-decoration:none">Exemplo: um User (Entidade) com seu Nome, senha, email e saldo (Atributos) anuncia um móvel (Entidade) por certo valor (Atributo) e o vende, recebendo esse mesmo valor (Relacionamento) em uma relação 1:1 (cardinalidade).</span>      
     </div>
   </section>
 
   <section>
-    <h2></h2>
+    <h2>Normalização de Dados</h2>
     <div>
       
     </div>

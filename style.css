@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 * {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
@@ -10,7 +10,7 @@ nav {
   padding: 12px;
 }
 nav h1 {
-  font-size: 59px;
+  font-size: 61px;
   font-weight: bold;
 }
 body {
@@ -19,21 +19,30 @@ body {
 }
 section {
   margin: auto;
-  width: 600px;
-  max-width: 60vw;
+  width: 700px;
+  max-width: 67vw;
 }
 section h2 {
   text-align: center;
   margin-top: 15px;
+  font-size: 42px;
 }
 section h3 {
   margin-bottom: 8px;
   color: #4FCC13;
+  font-size: 27px;
 }
 section div {
   background-color: rgb(220, 20, 60);
   padding: 15px;
   border: none;
-  border-radius: 15px;
-  margin-top: 15px;
+  border-radius: 13px;
+  margin-top: 20px;
+  line-height: 1.65;
+  font-size: 19px;
+  margin-bottom: 27px;
+}
+span {
+  color: rgb(246, 246, 253);
+  text-decoration: underline;
 }
