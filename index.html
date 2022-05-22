@@ -51,7 +51,68 @@
   <section>
     <h2>Normalização de Dados</h2>
     <div>
-      
+      <h3>O que é e para que serve</h3>
+      Normalização é uma ferramenta usada no projeto lógico que serve para reestruturar tabelas e atributos, reduzindo assim redundâncias e permitindo o correto crescimento do banco de dados. Por meio dela que bancos com muita movimentação garantem sua integridade após remoção, inserção e alteração dos dados.<br><br>
+      O processo de normalização conta com 6 formas:
+      <ul>
+      <li><span>1FN </span>(1° Forma Normal)</li>
+      <li><span>2FN </span>(2° Forma Normal)</li>
+      <li><span>3FN </span>(3° Forma Normal)</li>
+      <li><span>FNBC</span> (Forma normal de Boyce e Codd)</li>
+      <li><span>4FN </span>(4° Forma Normal)</li>
+      <li><span>5FN </span>(5° Forma Normal)</li>
+      </ul><br>
+      A partir da 3° forma normal diz-se que o banco de dados já se encontra normalizado. A FNBC, a 4FN e a 5FN são usadas para melhorar o banco mais do que já está. No entanto, alguns projetos decidem parar na 3FN pois as outras formas, dependendo da situação, podem exigir um pouco mais de processamento. Vamos abordar apenas as 3 primeiras, porque são as mais usadas. As outras são usadas em casos bem específicos.
+    </div>
+    <div>
+      <h3>Formas normais e suas aplicações</h3>
+      <span>1FN</span> → <span>2FN</span> → <span>3FN</span><br>
+      As formas normais são sequenciais, ou seja, se um banco se encontra na terceira forma normal, isso também significa que o mesmo está na segunda e também na primeira. Por isso devemos sempre começar a normalização pela primeira forma normal, para que não haja problemas mais a frente na nossa normalização.<br><br>
+      <h3>Chave Primária e Atributos</h3>
+      Antes de começar a ver as formas normais, nós devemos ver primeiro as definições de chaves primárias e atributos.
+      <li><span>Chave Primária</span>: é o elemento principal que compõe a tabela, ou seja, é o título da tabela.</li>
+      <li><span>Atributos</span>: São os elementos classificados que estão dentro da tabela</li>
+      <li><span>Exemplo</span>: <br><img src="./exemplo1.png" alt="Exemplo de chave primária e atributos"></li>
+    </div>
+    <div>
+      <h3>Primeira Forma Normal</h3>
+      Podemos dizer que uma tabela se encontra na Primeira Forma Normal se:
+      <ul>
+      <li>Possui ao menos uma chave primária;</li>
+      <li>Não possui grupos repetitivos;</li>
+      <li>Todos os seus atributos são únicos, ou seja, não precisa ser decomposto.</li></ul><br>
+      Para chegar a primeira forma normal devemos: <br>
+      <i>Fazer uma análise superficial para determinar o atributo que possui característica de chave primária, tornar todos atributos únicos, transformar o grupo repetitivo em uma nova tabela, levando a chave primária da tabela na qual estava, para manter a ligação entre a tabela criada e a original. Depois aplicamos também sobre essa nova tabela a primeira forma normal.</i>
+      <br><span>Exemplo:</span><br>
+      <img src="./exemplo2.png" alt="Exemplo do uso da primeira forma normal">
+    </div>
+
+    <div>
+      <h3>Segunda Forma Normal</h3>Podemos dizer que uma tabela se encontra na Segunda Forma Normal se:
+      <ul>
+        <li>Está na primeira forma normal;</li>
+        <li>Possui dependência Total de outros atributos.</li>
+      </ul><br>
+      Para chegar à segunda forma normal verifique se existe chave composta, se não, então ele já está na 2° forma normal, se sim, então verifique todos os atributos da relação que dependem de todos os atributos que compõem a chave primária. Por exemplo, se a chave primária é composta dos atributos A, B e o campo C em questão depende somente de B. Se sim, já está na segunda forma normal. Se não, pegue o atributo B que não depende totalmente de outros atributos e crie uma nova tabela.<br>
+      <br><span>Exemplo:</span> (Obs: ➙ significa “depende de…”).
+      <br>
+      <img src="./exemplo3.png" alt="Exemplo da aplicação da segunda forma normal">
+    </div>
+
+    <div>
+      <h3>Terceira Forma Norma</h3>
+      Podemos dizer que uma tabela se encontra na Terceira Forma Normal se:
+      <ul>
+        <li>Está na segunda forma normal;</li>
+        <li>Não existirem Dependências Transitivas;</li>
+        <li>A tabela não deve ter um atributo não-chave determinado funcionalmente por outro atributo não-chave;</li>
+        <li>NÃO deve haver dependência transitiva de um atributo não-chave sobre a chave primária;</li>
+        <li>Deve-se decompor e montar uma nova tabela que inclua os atributos não-chave que determinam funcionalmente outros atributos não-chave.</li>
+      </ul><br>
+      Se nenhum dos campos foram determinados transitivamente pela chave primária. Para chegar à terceira forma normal verifique os campos que não são chave primária. Se algum desses campos não chave possuir dependência com outro campo não chave, então essa tabela não se encontra na terceira forma normal, Para cada atributo não-chave que for um determinante na tabela, crie uma nova tabela, e esse atributo será a chave primária na nova tabela.
+      <br><span>Exemplo:</span><br>
+      <img src="./exemplo4.png" alt="Exemplo da aplicação da terceira forma normal">
+
     </div>
   </section>
 

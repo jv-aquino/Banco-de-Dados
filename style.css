@@ -20,7 +20,7 @@ body {
 section {
   margin: auto;
   width: 700px;
-  max-width: 67vw;
+  max-width: 68vw;
 }
 section h2 {
   text-align: center;
@@ -39,7 +39,7 @@ section div {
   border-radius: 13px;
   margin-top: 20px;
   line-height: 1.65;
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 27px;
 }
 span {
